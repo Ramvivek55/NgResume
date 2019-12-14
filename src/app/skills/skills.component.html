@@ -1,0 +1,72 @@
+<section id="skills" class="section section-skills">
+    <div class="animate-up">
+        <h2 class="section-title">Professional Skills</h2>
+        <div class="section-box">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="progress-bar">
+                        <div class="bar-data">
+                            <span class="bar-title">AngularJS</span>
+
+                        </div>
+                        <div class="bar-line">
+                            <span class="bar-fill" data-width="60%"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="progress-bar">
+                        <div class="bar-data">
+                            <span class="bar-title">HTML &amp; CSS</span>
+
+                        </div>
+                        <div class="bar-line">
+                            <span class="bar-fill" data-width="60%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="progress-bar">
+                        <div class="bar-data">
+                            <span class="bar-title">JavaScript</span>
+
+                        </div>
+                        <div class="bar-line">
+                            <span class="bar-fill" data-width="50%"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="progress-bar">
+                        <div class="bar-data">
+                            <span class="bar-title">Jquery &amp; MySQL</span>
+
+                        </div>
+                        <div class="bar-line">
+                            <span class="bar-fill" data-width="40%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br>
+
+<!-- <h5 class="widget-title" style="text-align: center;">Drag And Drop</h5> -->
+
+<section class="section section-about" style="text-align: center;">
+    <div class="animate-up">
+        <h2 class="section-title">Drag & Drop-Skills</h2>
+        <div class="section-box">
+<div class="profile-social">
+<div cdkDropList class="example-list section-box" (cdkDropListDropped)="drop($event)">
+    <div class="example-box section-box"   *ngFor="let data of datas" cdkDrag><span class="widget-title" style="font-size: 13px;">{{data.name}}</span></div>
+  </div>
+        </div>
+        </div>
+    </div>
+</section>
