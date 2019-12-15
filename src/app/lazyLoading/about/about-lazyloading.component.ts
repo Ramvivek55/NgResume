@@ -16,15 +16,6 @@ export class AboutLazyloadingComponent implements OnInit {
   openDialog() {
     const dialogRef = this.dialog.open(DialogModalComponent);
   }
-
-  datas =[
-
-    {"name":"padhu"},
-    {"name":"ram"},
-    {"name":"vision"}
-    
-    ]
-
 }
 
 @Component({

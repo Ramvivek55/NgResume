@@ -1,4 +1,35 @@
-<button mat-button (click)="openDialog()">Open dialog</button>
 
+<br>
+<mat-card class="example-card profile-social">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title><span style="color:white;">About</span></mat-card-title>
+      <mat-card-subtitle><span style="color:white;">Information</span></mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image style="margin-left: 1px;" src="./assets/img/about.jpg" alt="">
+    <mat-card-content>
+      <p>
+          <span style="color:white;">
+            What do we mean by personal details?  All these things and more:
 
-<div *ngFor="let data of datas">{{data.name}}</div>
+            Your name (including any middle names)
+            Where you live, and where you’ve lived in the past
+            Your date of birth
+            Where you were born
+            Where you went to school
+            What jobs you do and what jobs you’ve done in the past
+            Your phone numbers and email addresses
+            Who you live with
+            Financial details, including bank account and credit card numbers
+            Your National Insurance and NHS numbers
+            PINs (Personal Identification Numbers) and passwords
+            Key information (such as your mother’s maiden name or the name of your pet) which may be used to identify you
+            Your habits and preferences – what you like, what you do in your spare time etc
+            Other personal information, such as health issues or disabilities.
+        </span>
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="openDialog()"><span style="color:white;">See More details in Dialog Modal</span></button>
+    </mat-card-actions>
+  </mat-card>

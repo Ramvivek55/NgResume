@@ -1,4 +1,4 @@
-<section class="section">
+<!-- <section class="section">
     <div class="animate-up">
         <h2 class="section-title">Contact</h2>
         <div class="profile-social">
@@ -15,8 +15,7 @@
 
          <mat-form-field>
             <mat-select placeholder="Gender">
-              <mat-option value="option">Male</mat-option>
-              <mat-option value="option1">Female</mat-option>
+              <mat-option *ngFor="let list of lists">{{list.value}}</mat-option>
             </mat-select>
           </mat-form-field>
 
@@ -32,4 +31,26 @@
         </div>
         </div>
         
-</section>
+</section> -->
+
+
+<br>
+<mat-card class="example-card profile-social">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title><span style="color:white;">Contact</span></mat-card-title>
+      <mat-card-subtitle><span style="color:white;">Information</span></mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image style="margin-left: 1px;" src="./assets/img/contact.jpg" alt="">
+    <mat-card-content>
+      <p>
+          <span style="color:white;">
+            contact. An individual's private or personal information by which another person, business, or entity can use to reach the individual. ... For example, an individual may say that he or she has a contact at XYZ Company, meaning the individual knows a person at 
+            XYZ Company and has a way of reaching this person.
+        </span>
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="openDialog()"><span style="color:white;">See More details in Dialog Modal</span></button>
+    </mat-card-actions>
+  </mat-card>

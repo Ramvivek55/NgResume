@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {MatDialog} from '@angular/material/dialog';
 @Component({
   selector: 'app-blog-lazyloading',
   templateUrl: './blog-lazyloading.component.html',
@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogLazyloadingComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
   }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogModalComponent);
+  }
+
+}
+
+@Component({
+  selector: 'app-dialog-modal',
+  templateUrl: './dialog-modal.component.html'
+})
+
+export class DialogModalComponent  {
 
 }

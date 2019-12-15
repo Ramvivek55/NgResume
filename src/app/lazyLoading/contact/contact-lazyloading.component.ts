@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
-export interface Food {
+import {MatDialog} from '@angular/material/dialog';
+export interface data {
   value: string;
-  viewValue: string;
 }
 
 @Component({
@@ -12,16 +11,26 @@ export interface Food {
 })
 export class ContactLazyloadingComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
   }
-
-
-  foods: Food[] = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
+  lists: data[] = [
+    {value: "Male"},
+    {value: "Female"} 
   ];
+
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogModalComponent);
+  }
+
+}
+
+@Component({
+  selector: 'app-dialog-modal',
+  templateUrl: './dialog-modal.component.html'
+})
+
+export class DialogModalComponent  {
 
 }

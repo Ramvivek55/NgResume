@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
-import { ContactLazyloadingComponent } from './contact-lazyloading.component';
+import { ContactLazyloadingComponent, DialogModalComponent} from './contact-lazyloading.component';
 import { ContactlazyRoutingModule } from './contactlazy-routing.module';
-import {MatInputModule} from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import { CommonModule } from '@angular/common';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
-  declarations: [ContactLazyloadingComponent],
-  imports: [ContactlazyRoutingModule,MatInputModule,MatSelectModule,MatButtonModule]
+  declarations: [ContactLazyloadingComponent, DialogModalComponent],
+  imports: [ContactlazyRoutingModule,MatButtonModule,CommonModule,MatButtonModule,MatDialogModule,MatCardModule],
+  entryComponents: [DialogModalComponent]
 })
 export class ContactlazyModule { }

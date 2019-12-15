@@ -1,0 +1,11 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('/assets/img/about.jpg');
+  background-size: cover;
+}
+.mat-dialog-container{
+  background-color: aquamarine;
+}

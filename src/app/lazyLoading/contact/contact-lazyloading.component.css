@@ -1,12 +1,11 @@
-.example-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .example-container > * {
-    width: 100%;
-  }
-.example-button-row button,
-.example-button-row a {
-  margin-right: 8px;
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('/assets/img/contact.jpg');
+  background-size: cover;
+}
+.mat-dialog-container{
+  background-color: aquamarine;
 }
