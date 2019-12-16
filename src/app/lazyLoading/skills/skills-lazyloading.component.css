@@ -1,9 +1,9 @@
-.example-card {
+/* .example-card {
     max-width: 400px;
-  }
+  } */
   
   .example-header-image {
-    background-image: url('/assets/img/skills.jpg');
+    background-image: url('/assets/img/skillsme.jpg');
     background-size: cover;
   }
   .mat-dialog-container{

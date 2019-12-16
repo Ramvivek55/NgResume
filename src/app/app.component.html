@@ -3,12 +3,12 @@
         <div class="widget-area">
             <aside class="widget widget-profile">
                 <div class="profile-photo">
-                    <img src="assets/img/ramvivek.jpg"
+                    <img src="assets/img/ramvivekme.jpg"
                         alt="Author Image">
                 </div>
                 <div class="profile-info">
                     <h2 class="profile-title">{{datas.name}}</h2>
-                    <h3 class="profile-position">FrontEnd Software Developer</h3>
+                    <h3 class="profile-position">FrontEnd Developer</h3>
                 </div>
             </aside>
 
@@ -32,7 +32,7 @@
                     <li><a [routerLink]="['/experience']" routerLinkActive="router-link-active">Experience</a></li>
                     <li><a [routerLink]="['/education']" routerLinkActive="router-link-active">Education</a></li>
                     <li><a [routerLink]="['/reference']" routerLinkActive="router-link-active">References</a></li>
-                    <li><a [routerLink]="['/blog']" routerLinkActive="router-link-active">Blog</a></li>
+                    <!-- <li><a [routerLink]="['/blog']" routerLinkActive="router-link-active">Blog</a></li> -->
                     <li><a [routerLink]="['/calendar']" routerLinkActive="router-link-active">Calendar</a></li>
                     <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</a></li>
                 </ul>
@@ -105,7 +105,7 @@
 </section> -->
 
 
-
+<router-outlet></router-outlet>
 <app-about [profileData]='datas'></app-about>
 <app-skills></app-skills>
 <app-portfolio></app-portfolio>
@@ -114,7 +114,6 @@
 <app-reference></app-reference>
 <app-calender></app-calender>
 <app-contact></app-contact>
-<router-outlet></router-outlet>
 </div>
 </div>
 <app-footer></app-footer>
