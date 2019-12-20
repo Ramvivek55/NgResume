@@ -1,0 +1,27 @@
+/*Related post at: https://superdevresources.com/zoom-effect-image-css/ */
+
+
+
+
+.zoom-effect-container {
+    float: left;
+    position: relative;
+    width: 640px;
+    height: 360px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.image-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+  }
+
+.zoom-effect-container:hover .image-card img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+

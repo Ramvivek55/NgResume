@@ -9,7 +9,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { EducationComponent } from './education/education.component';
-import { ReferenceComponent } from './reference/reference.component';
+import { ReferenceComponent, DialogModelComponent } from './reference/reference.component';
 import { CalenderComponent } from './calender/calender.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -24,6 +24,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     HeaderComponent,
     FooterComponent,
     BirthdatePipe,
+    DialogModelComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,8 +56,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatSelectModule,
     MatDatepickerModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule
   ],
+  entryComponents: [DialogModelComponent],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [

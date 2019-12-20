@@ -1,0 +1,30 @@
+.image-card {
+    top: 0;
+    left: 0;
+}
+  
+.zoom-effect-container:hover .image-card img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+ }
+ .a1{
+    display: none;
+}
+
+ .a2{
+     display: none;
+ }
+ 
+ .a3{
+    display: none;
+}
+
+.a4{
+    display: none;
+}
+
+.a5{
+    display: none;
+}
+
+  

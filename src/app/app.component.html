@@ -3,7 +3,7 @@
         <div class="widget-area">
             <aside class="widget widget-profile">
                 <div class="profile-photo">
-                    <img src="assets/img/ramvivekme.jpg"
+                    <img src="assets/img/vivek.jpg"
                         alt="Author Image">
                 </div>
                 <div class="profile-info">
@@ -28,10 +28,10 @@
                 <ul>
                     <li><a [routerLink]="['/about']" routerLinkActive="router-link-active" >About</a></li>
                     <li><a [routerLink]="['/skills']" routerLinkActive="router-link-active">Skills</a></li>
-                    <li><a [routerLink]="['/portfolio']" routerLinkActive="router-link-active">Portfolio</a></li>
+                    <!-- <li><a [routerLink]="['/portfolio']" routerLinkActive="router-link-active">Portfolio</a></li> -->
                     <li><a [routerLink]="['/experience']" routerLinkActive="router-link-active">Experience</a></li>
                     <li><a [routerLink]="['/education']" routerLinkActive="router-link-active">Education</a></li>
-                    <li><a [routerLink]="['/reference']" routerLinkActive="router-link-active">References</a></li>
+                    <!-- <li><a [routerLink]="['/reference']" routerLinkActive="router-link-active">References</a></li> -->
                     <!-- <li><a [routerLink]="['/blog']" routerLinkActive="router-link-active">Blog</a></li> -->
                     <li><a [routerLink]="['/calendar']" routerLinkActive="router-link-active">Calendar</a></li>
                     <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</a></li>
@@ -104,13 +104,12 @@
     </div>
 </section> -->
 
-
 <router-outlet></router-outlet>
 <app-about [profileData]='datas'></app-about>
 <app-skills></app-skills>
-<app-portfolio></app-portfolio>
-<app-education></app-education>
+<!-- <app-portfolio></app-portfolio> -->
 <app-experience></app-experience>
+<app-education></app-education>
 <app-reference></app-reference>
 <app-calender></app-calender>
 <app-contact></app-contact>
@@ -118,7 +117,6 @@
 </div>
 <app-footer></app-footer>
 </div>
-
 
 
 
