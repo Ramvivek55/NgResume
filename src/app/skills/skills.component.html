@@ -1,4 +1,4 @@
-<section id="skills" class="section section-skills">
+<div id="skills" class=" section-skills" style="padding-top: 6rem;">
     <div class="animate-up">
         <h2 class="section-title">Professional Skills</h2>
         <div class="section-box">
@@ -52,21 +52,19 @@
             </div>
         </div>
     </div>
-</section>
+<!-- </section> -->
 
-<br>
 
-<!-- <h5 class="widget-title" style="text-align: center;">Drag And Drop</h5> -->
-
-<section class="section section-about" style="text-align: center;">
+<div class=" section-about" style="text-align: center;">
     <div class="animate-up">
         <h2 class="section-title">Drag & Drop-Skills</h2>
-        <div class="section-box">
+        <div class="section-box" style="padding-bottom: 0px;">
 <div class="profile-social">
-<div cdkDropList class="example-list section-box" (cdkDropListDropped)="drop($event)">
+<div cdkDropList class="example-list section-box" style="padding-bottom: 0px;" (cdkDropListDropped)="drop($event)">
     <div class="example-box section-box"   *ngFor="let data of datas" cdkDrag><span class="widget-title" style="font-size: 13px;">{{data.name}}</span></div>
   </div>
         </div>
         </div>
     </div>
-</section>
+</div>
+</div>

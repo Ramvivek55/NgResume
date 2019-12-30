@@ -27,4 +27,7 @@
     display: none;
 }
 
-  
+.mat-dialog-container {
+    background-color: none !important;
+    padding: 0px !important;
+  }

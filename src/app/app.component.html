@@ -1,113 +1,15 @@
-<div class="sidebar sidebar-fixed">
-        <button class="btn-sidebar btn-sidebar-close"><i class="fa fa-list fa-2x" aria-hidden="true"></i></button>
-        <div class="widget-area">
-            <aside class="widget widget-profile">
-                <div class="profile-photo">
-                    <img src="assets/img/vivek.jpg"
-                        alt="Author Image">
-                </div>
-                <div class="profile-info">
-                    <h2 class="profile-title">{{datas.name}}</h2>
-                    <h3 class="profile-position">FrontEnd Developer</h3>
-                </div>
-            </aside>
-
-            <!-- <aside class="widget widget_search">
-                <form method="get" class="search-form" action="https://rscard.px-lab.com/startuper/">
-                    <label>
-                        <span class="screen-reader-text">Search for</span>
-                        <input type="search" class="search-field" placeholder="Search ..." value="" name="s"
-                            title="Search for:">
-                    </label>
-                    <input type="submit" class="search-submit" value="Search">
-                </form>
-            </aside> -->
-            
-            <aside class="widget widget_archive">
-                <h2 class="widget-title">Menu</h2>
-                <ul>
-                    <li><a [routerLink]="['/about']" routerLinkActive="router-link-active" >About</a></li>
-                    <li><a [routerLink]="['/skills']" routerLinkActive="router-link-active">Skills</a></li>
-                    <!-- <li><a [routerLink]="['/portfolio']" routerLinkActive="router-link-active">Portfolio</a></li> -->
-                    <li><a [routerLink]="['/experience']" routerLinkActive="router-link-active">Experience</a></li>
-                    <li><a [routerLink]="['/education']" routerLinkActive="router-link-active">Education</a></li>
-                    <!-- <li><a [routerLink]="['/reference']" routerLinkActive="router-link-active">References</a></li> -->
-                    <!-- <li><a [routerLink]="['/blog']" routerLinkActive="router-link-active">Blog</a></li> -->
-                    <li><a [routerLink]="['/calendar']" routerLinkActive="router-link-active">Calendar</a></li>
-                    <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</a></li>
-                </ul>
-            </aside>
-        </div>
-    </div>
 
 
+    
 
 
-
-
-
-
-
-
-
-<div class="wrapper">
+<!-- <div class="wrapper">
     <app-header></app-header>
-<div class="content">
+<div class="content" style="bottom: 6rem;">
     <div class="container">
-
-
-<!-- <section id="text_section" class="section section-text">
-    <div class="animate-up">
-        <h2 class="section-title">Twitter section</h2>
-        <div class="section-box-transparent">
-            <div class="twitter-icon">
-                <i class="rsicon rsicon-twitter"></i>
-            </div>
-            <div class="latest-tweets">
-                <div>
-                    <p class="tweet-text">Thank you for helping us to reach the next level in sales!!!
-                        😀
-                        BoomBox — <a href="http://twitter.com/search?q=%23Viral">#Viral</a> <a
-                            href="http://twitter.com/search?q=%23Magazine">#Magazine</a> <a
-                            href="http://twitter.com/search?q=%23WordPress">#WordPress</a> <a
-                            href="http://twitter.com/search?q=%23Theme">#Theme</a> -… <a
-                            href="https://t.co/JlMVPHKXV9">https://t.co/JlMVPHKXV9</a></p>
-                    <p class="tweet-details"><a target="_blank"
-                            href="http://twitter.com/_pxlab/status/1067069044375920640"><time
-                                datetime="2016-07-21 07:43:32+0000">November 26, 2018 2:54 pm</time></a>
-                    </p>
-                </div>
-                <div>
-                    <p class="tweet-text">Another level is reached!!!
-                        Thank you for being with us!!! 😀
-
-                        Buy Boombox on <a
-                            href="http://twitter.com/search?q=%23themeforest">#themeforest</a> -… <a
-                            href="https://t.co/f6D1TA1nZn">https://t.co/f6D1TA1nZn</a></p>
-                    <p class="tweet-details"><a target="_blank"
-                            href="http://twitter.com/_pxlab/status/1055841999717318656"><time
-                                datetime="2016-07-21 07:43:32+0000">October 26, 2018 3:22 pm</time></a>
-                    </p>
-                </div>
-                <div>
-                    <p class="tweet-text">This is one of the unique features of the <a
-                            href="http://twitter.com/search?q=%23Boombox">#Boombox</a> theme. Have you
-                        noticed that many popular websites like BBC and… <a
-                            href="https://t.co/N8OJNjBeUX">https://t.co/N8OJNjBeUX</a></p>
-                    <p class="tweet-details"><a target="_blank"
-                            href="http://twitter.com/_pxlab/status/1055841676042887168"><time
-                                datetime="2016-07-21 07:43:32+0000">October 26, 2018 3:20 pm</time></a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
 <router-outlet></router-outlet>
 <app-about [profileData]='datas'></app-about>
-<app-skills></app-skills>
-<!-- <app-portfolio></app-portfolio> -->
+<app-skills ></app-skills>
 <app-experience></app-experience>
 <app-education></app-education>
 <app-reference></app-reference>
@@ -116,10 +18,129 @@
 </div>
 </div>
 <app-footer></app-footer>
+</div> -->
+
+
+<!-- <div class="wrapper">
+    <app-header></app-header>
+    <div class="content" style="bottom: 10rem;">
+
+    <div id="fullpage">
+        <div class="container">
+<router-outlet></router-outlet>
+    <div class="section" id="a1">
+        <app-about [profileData]='datas'></app-about>
+    </div>
+
+    <div class="section" id="a2">
+        <h1>Welcome3</h1>
+    </div>
+
+    <div class="section" id="a3">
+        <h1>Welcome3</h1>
+    </div>
+
+    <div class="section" id="a4">
+        <h1>Welcome3</h1>
+    </div>
+
+    <div class="section" id="a5">
+        <h1>Welcome3</h1>
+    </div>
+
+
+    </div>
+
 </div>
 
+</div>
+<app-footer></app-footer>
+</div>  -->
 
 
 
 
 
+
+    <!-- <div class="wrapper">
+        <app-header></app-header>
+    <div class="content" style="bottom: 6rem;">
+        <div class="container">
+
+            <router-outlet></router-outlet>
+            <app-about class="section" id="section1" [profileData]='datas'></app-about>
+            <app-skills class="section" id="section2"></app-skills>
+            <app-experience class="section" id="section3"></app-experience>
+            <app-education class="section" id="section4"></app-education>
+            <app-reference class="section" id="section5"></app-reference>
+            <app-calender class="section" id="section6"></app-calender>
+            <app-contact class="section" id="section"></app-contact>
+            </div>
+            </div>
+            <app-footer></app-footer>
+            </div> -->
+
+
+
+  
+            <div class="wrapper">
+              <app-header></app-header>
+              <div class="content" style="bottom: 12.5rem;">
+                <div class="container">
+
+            <div id="fullpage">
+              <div class="section" id="section0">
+                <!-- <div class="intro"> -->
+                  <app-about [profileData]='datas'></app-about>
+                <!-- </div> -->
+              </div>
+              
+              <div class="section" id="section1">
+                <!-- <div class="intro"> -->
+                  <app-skills></app-skills>
+                <!-- </div> -->
+              </div>
+
+              <div class="section" id="section2">
+                <!-- <div class="intro"> -->
+                  <app-experience></app-experience>
+                <!-- </div> -->
+              </div>
+
+
+              <div class="section" id="section3">
+                <!-- <div class="intro"> -->
+                  <app-education></app-education>
+                <!-- </div> -->
+              </div>
+
+
+              <div class="section" id="section4">
+                <!-- <div class="intro"> -->
+                  <app-reference></app-reference>
+                <!-- </div> -->
+              </div>
+
+              <div class="section" id="section5">
+                <!-- <div class="intro"> -->
+                  <app-calender></app-calender>
+                <!-- </div> -->
+              </div>
+
+              <div class="section" id="section6">
+                <!-- <div class="intro"> -->
+                   <app-contact></app-contact>
+                <!-- </div> -->
+              </div>
+
+
+              
+            </div>
+
+
+            </div>
+            </div>
+            </div>
+            
+
+            

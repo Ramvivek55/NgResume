@@ -83,7 +83,7 @@
 	
 	function createOptionPanel(){
 		var $html = '<div id="op-panel">'+
-			'<div id="op-panel-btn" style="height: 34px!important;"><i  class="fa fa-cog fa-2x" style="padding-left: 8px;" aria-hidden="true"></i></div>'+
+			'<div id="op-panel-btn" style="height: 34px!important;width: 0rem;right: 0rem;"><i  class="fa fa-cog fa-2x" style="padding-left: 8px;" aria-hidden="true"></i></div>'+
 			'<div class="op-content">'+
                 '<div class="op-section">'+
                     '<div class="op-theme-skin op-btn-group">'+
